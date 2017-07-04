@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 20170704012808) do
   create_table "tasks", force: :cascade do |t|
     t.string "name"
     t.integer "priority"
-    t.boolean "done"
+    t.boolean "done", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
